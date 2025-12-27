@@ -1,4 +1,11 @@
-require 'rgeo'
+require 'bundler/inline'
+
+gemfile do
+  source 'https://rubygems.org'
+  gem 'rgeo', '~> 3.0.1'
+end
+
+puts "Inline dependencies installed"
 
 coordinates =
   File
